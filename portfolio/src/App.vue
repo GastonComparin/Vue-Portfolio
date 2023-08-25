@@ -128,7 +128,7 @@
               class="card-img-top"
               alt="..."
             />
-            <div class="card-body">
+            <div class="card-body" style="height: 10.5rem">
               <h5 class="card-title">Muscle Lab</h5>
               <span class="badge">JavaScript</span>
               <span class="badge">CSS</span>
@@ -202,16 +202,13 @@
               class="card-img-top"
               alt="..."
             />
-            <div class="card-body">
+            <div class="card-body" style="height: 10.5rem">
               <h5 class="card-title">Gimlet Cocktail Club</h5>
               <span class="badge">JavaScript</span>
               <span class="badge">CSS</span>
               <span class="badge">HTML</span>
-              <span class="badge">Redux</span>
-              <span class="badge">React</span>
-              <span class="badge">SQL</span>
-              <span class="badge">ExpressJS</span>
-              <span class="badge">Postgres</span>
+              <span class="badge">VUE</span>
+              <span class="badge">BOOTSRAP</span>
               <br />
 
               <a
@@ -376,7 +373,7 @@ export default {
 .nav-link {
   color: white;
 }
-.nav-item{
+.nav-item {
   cursor: pointer;
 }
 .nav-link:hover {
