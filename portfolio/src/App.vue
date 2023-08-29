@@ -1,5 +1,4 @@
 <template>
-  
   <nav class="navbar sticky-top navbar-expand-lg bg-transparent">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">LOGO</a>
@@ -34,17 +33,18 @@
     </div>
   </nav>
   <!-- !INICIO -->
-  <div id="inicio" style="margin-left: 15rem" class="d-flex col-12">
-    <div class="card m-5 border-0">
+
+  <div id="inicio" class="d-flex col-12 ms-md-5">
+    <div class="card m-md-5 border-0">
       <img
         src="https://picsum.photos/id/120/600/800"
-        class="card-img-top"
+        class="card-img-top d-none d-md-block"
         alt="..."
       />
     </div>
-    <div class="card m-5 bg-transparent">
+    <div class="card bg-transparent">
       <div class="card-body" style="text-align: left">
-        <div class="col-6">
+        <div class="col-md-6 col-12">
           <h1 class="card-title" style="color: white">Gaston Comparin</h1>
           <h2 class="card-title" style="color: #ee6c4d">FullStack Developer</h2>
           <p class="card-text" style="color: white">
@@ -57,7 +57,10 @@
             soluciones web impactantes.
           </p>
           <!-- !BOTON DE DESCARGA DE CV -->
-          <a class="btn btn-primary" download="GastonComparin_CV.pdf" href="GastonComparin.pdf" 
+          <a
+            class="btn btn-primary"
+            download="GastonComparin_CV.pdf"
+            href="GastonComparin.pdf"
             >Descargar CV</a
           >
           <!-- ?GITHUB Y LENKEDIN -->
@@ -292,13 +295,19 @@
   </div>
   <!--! CONTACTO -->
   <h1 id="contacto" class="titulos m-3">Contáctame</h1>
-  <div style="margin: 2rem" class="col-6 mx-auto d-flex justify-content-center">
+  <div class="col-12 col-md-6 mx-auto d-flex justify-content-center">
     <div class="card bg-transparent" style="color: white">
-      <div class="d-flex m-1 align-items-center">
-        <img width="36" src="./assets/gmail.png" alt="" />
-        <p class="ms-3 m-3">gastoncomparin92@gmail.com</p>
-        <img width="36" src="./assets/whatsapp.png" alt="" />
-        <p class="ms-3 m-3">+54 9 2613370889</p>
+      <div
+        class="d-flex flex-column flex-md-row justify-content-center m-1 align-items-center"
+      >
+        <div class="m-1 text-center">
+          <img width="36" src="./assets/gmail.png" alt="" />
+          <p class="ms-3 m-3">gastoncomparin92@gmail.com</p>
+        </div>
+        <div class="m-1 text-center">
+          <img width="36" src="./assets/whatsapp.png" alt="" />
+          <p class="ms-3 m-3">+54 9 2613370889</p>
+        </div>
       </div>
     </div>
   </div>
@@ -307,12 +316,7 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 export default {
-  name: "App",
-  components: {
-    HelloWorld,
-  },
   methods: {
     scrollToProyectos() {
       const proyectos = document.querySelector("#proyectos");
