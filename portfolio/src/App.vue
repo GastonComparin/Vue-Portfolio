@@ -1,4 +1,5 @@
 <template>
+  
   <nav class="navbar sticky-top navbar-expand-lg bg-transparent">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">LOGO</a>
@@ -56,10 +57,7 @@
             soluciones web impactantes.
           </p>
           <!-- !BOTON DE DESCARGA DE CV -->
-          <a
-            class="btn btn-primary"
-            href="./GastonComparin.pdf"
-            download="GastonComparin"
+          <a class="btn btn-primary" download="GastonComparin_CV.pdf" href="GastonComparin.pdf" 
             >Descargar CV</a
           >
           <!-- ?GITHUB Y LENKEDIN -->
@@ -310,7 +308,6 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "App",
   components: {
