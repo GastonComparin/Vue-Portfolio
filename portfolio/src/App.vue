@@ -55,7 +55,13 @@
             puedo combinar mi creatividad y habilidades técnicas para construir
             soluciones web impactantes.
           </p>
-          <a class="btn btn-primary">Descargar CV</a>
+          <!-- !BOTON DE DESCARGA DE CV -->
+          <a
+            class="btn btn-primary"
+            href="./GastonComparin.pdf"
+            download="GastonComparin"
+            >Descargar CV</a
+          >
           <!-- ?GITHUB Y LENKEDIN -->
           <a
             class="git m-3"
@@ -352,6 +358,8 @@ export default {
   background-image: url("../src/assets/pxfuel.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  width: screen;
+  overflow: hidden;
 }
 .btn {
   background-color: #ee6c4d;
